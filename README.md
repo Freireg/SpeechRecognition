@@ -5,5 +5,6 @@ This project is heavily inspired by Shawn Hymel youtube's series "[Intro to Tens
 
 This project consists in 3 phases:
 * Creating the model features
+> * Here
 * Training the model and convert to tflite extension
 * Uploading the model into a RPI and run the script
