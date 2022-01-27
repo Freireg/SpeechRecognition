@@ -5,6 +5,8 @@ This project is heavily inspired by Shawn Hymel youtube's series "[Intro to Tens
 
 This project consists in 3 phases:
 * Creating the model features
-> * Here
+>* Here the user should input the training datasets to make the speech recognition and select which word it wants to be the "wake-up" word
 * Training the model and convert to tflite extension
+>* In this phase the features created before need to be made into a TensorFlow model and trained
 * Uploading the model into a RPI and run the script
+>* Cloning this repo into the rasp should accelerate a lot the process
