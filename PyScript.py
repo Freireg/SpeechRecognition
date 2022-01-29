@@ -23,7 +23,7 @@ sample_rate = 48000
 resample_rate = 8000
 num_channels = 1
 num_mfcc = 16
-model_path = 'wake_word_stop_lite.tflite'
+model_path = 'wake_word_follow_lite.tflite'
 
 # Sliding window
 window = np.zeros(int(rec_duration * resample_rate) * 2)
@@ -102,7 +102,7 @@ def sd_callback(rec, frames, time, status):
     output_data = interpreter.get_tensor(output_details[0]['index'])
     val = output_data[0][0]
     if val > word_threshold:
-        print('Wake Word Noticed')
+        print('\nWake Word Noticed\n')
         GPIO.output(led_pin, GPIO.HIGH)
 
     if debug_acc:
